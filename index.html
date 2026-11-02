@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#080d1c">
+<meta name="description" content="눌러도 열받는 인터랙티브 개그 24종. 모든 것은 정상적으로 고장났습니다.">
+<title>킹받는 연구소 | GAG LAB</title>
+<style>
+:root{--bg:#080d1c;--surface:#121a30;--surface2:#19243d;--line:#2c3854;--text:#f1f5ff;--muted:#9daac3;--accent:#8b7aff;--accent2:#45d7c4;--danger:#ff6d8e;--shadow:0 22px 80px #0007}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;min-height:100dvh;font-family:ui-sans-serif,system-ui,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--text);background:radial-gradient(ellipse at 8% 0%,#292354 0%,transparent 33%),radial-gradient(ellipse at 94% 45%,#112d40 0%,transparent 35%),var(--bg);overflow-x:hidden}button,input{font:inherit}button{touch-action:manipulation;cursor:pointer}button:focus-visible,input:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}button:active{transform:scale(.97)}.app{max-width:1210px;margin:auto;padding:24px 22px 70px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 0 30px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:20px;letter-spacing:-.8px}.brand-symbol{display:grid;place-items:center;width:42px;height:42px;background:linear-gradient(145deg,#a897ff,#5a48e2);border-radius:15px;box-shadow:0 10px 24px #6855ff44;font-size:24px}.tag{border:1px solid #50506e;background:#262544;color:#c8bdff;border-radius:99px;padding:7px 12px;font-size:12px;font-weight:700}.hero{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:15px;background:linear-gradient(110deg,#332767,#1c2555 55%,#184050);border:1px solid #665d9b;border-radius:27px;padding:35px 38px;margin-bottom:26px;min-height:210px;box-shadow:var(--shadow)}.hero:after{content:'';position:absolute;border:1px solid #ffffff24;width:380px;height:380px;border-radius:50%;right:-40px;top:-210px}.eyebrow{color:#a4ffee;font-size:12px;letter-spacing:2px;font-weight:900}.hero h1{font-size:clamp(29px,4vw,49px);line-height:1.16;letter-spacing:-2px;margin:10px 0}.hero h1 span{color:#bba9ff}.hero p{margin:0;color:#c9d2ed;font-size:14px;line-height:1.8}.hero-art{position:relative;z-index:1;flex:0 0 190px;height:154px;display:grid;place-items:center}.hero-art .face{font-size:112px;filter:drop-shadow(0 15px 18px #080c2e8c);transform:rotate(-12deg);animation:float 4s ease-in-out infinite}.spark{position:absolute;font-size:27px;animation:float 2.8s ease-in-out infinite}.spark.one{top:0;right:0}.spark.two{bottom:0;left:0;animation-delay:.6s}@keyframes float{50%{transform:translateY(-9px) rotate(5deg)}}.layout{display:grid;grid-template-columns:322px minmax(0,1fr);gap:22px;align-items:start}.sidebar,.workspace{background:#10192bda;border:1px solid var(--line);border-radius:24px;box-shadow:0 14px 42px #0003}.sidebar{padding:19px;max-height:calc(100dvh - 35px);overflow:auto;position:sticky;top:17px;scrollbar-width:thin}.smalltitle{font-size:11px;color:#b4bbd0;font-weight:900;letter-spacing:1.6px;margin:2px 0 14px}.counter{float:right;color:#99f8df}.search{width:100%;padding:13px 15px;background:#0b1323;color:#fff;border:1px solid var(--line);border-radius:13px;outline:0;margin-bottom:13px;font-size:14px}.search::placeholder{color:#71819e}.menu{display:grid;grid-template-columns:1fr 1fr;gap:9px}.menu button{border:1px solid #303b57;background:#172239;border-radius:14px;padding:13px 10px;min-height:77px;text-align:left;display:flex;align-items:flex-start;flex-direction:column;justify-content:space-between;gap:7px;color:#dbe5fa;font-size:13px;font-weight:800;transition:background .16s,border-color .16s}.menu button[hidden]{display:none!important}.menu button .tile-icon{font-size:26px;line-height:1}.menu button:hover{background:#253352;border-color:#8679ea}.menu button.on{border-color:#a293ff;background:linear-gradient(130deg,#49379b,#332f70);box-shadow:inset 0 0 0 1px #a293ff33}.empty{color:var(--muted);font-size:13px;padding:12px 0}.workspace{min-height:610px;padding:27px;overflow:hidden}.workspace-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}.overline{font-size:11px;color:var(--accent2);letter-spacing:1.4px;font-weight:900}.workspace-top .hint{color:#8996b3;font-size:12px}.stage{width:100%;min-width:0}.sec{display:none;animation:appear .3s ease}.sec.on{display:block}@keyframes appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}.sec h2{font-size:clamp(23px,3vw,31px);letter-spacing:-1px;margin:0 0 7px}.intro{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 16px}.scene{height:190px;border-radius:22px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid #58618966;margin-bottom:21px;background:radial-gradient(circle at 50% 20%,#4f4a97 0%,#272c5b 45%,#171d3b 100%)}.scene:before,.scene:after{content:'✦';position:absolute;color:#d8cfff69;font-size:27px;top:16px;left:15%}.scene:after{content:'✳';left:auto;right:14%;top:auto;bottom:17px;font-size:23px}.scene-emoji{font-size:99px;line-height:1;filter:drop-shadow(0 17px 10px #070a2388);animation:float 3.7s ease-in-out infinite}.scene-badge{position:absolute;bottom:12px;right:14px;padding:6px 10px;font-weight:900;font-size:10px;background:#fff2;border:1px solid #fff3;border-radius:99px;color:#e7ddff;backdrop-filter:blur(7px)}.scene[data-theme='hot']{background:radial-gradient(circle,#7f393e,#43264f 54%,#211b38)}.scene[data-theme='mint']{background:radial-gradient(circle,#26676c,#223c58 52%,#161e3a)}.scene[data-theme='pink']{background:radial-gradient(circle,#713969,#452656 55%,#1b1e3b)}.panel{background:#17223a;border:1px solid #30405f;border-radius:19px;padding:20px;min-width:0}.big{font-size:clamp(32px,5vw,47px);font-weight:900;letter-spacing:-1.5px;color:#bdb1ff;margin:8px 0;text-align:center;font-variant-numeric:tabular-nums}.box{font-size:25px;font-weight:900;background:#0d172b;border:1px solid #354360;border-radius:14px;padding:17px;text-align:center;margin-bottom:11px;color:#c7beff}.btns{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.btns button,.action{flex:1;min-width:95px;border:1px solid #394967;border-radius:12px;padding:13px 11px;background:#26334d;cursor:pointer;font-size:13px;font-weight:800;color:#ebf0ff;transition:.16s}.btns button:hover,.action:hover{background:#354668}.btns button.p,.action.p{background:linear-gradient(120deg,#8a76fb,#695ce5);color:#fff;border-color:#9183ff}.msg{font-size:13px;color:#b2c2e1;margin-top:13px;min-height:36px;line-height:1.7;text-align:center}.bar{height:12px;background:#0c1426;border-radius:20px;overflow:hidden;margin:13px 0;border:1px solid #303d5b}.fill{height:100%;background:linear-gradient(90deg,#8577ff,#45d7c4);width:0;transition:width .3s;border-radius:inherit}.list{font-size:13px;margin-top:8px}.list div{padding:12px 1px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:8px}.list b{color:#c5baff}.field{width:100%;padding:14px;border:1px solid #3a4765;background:#0c1528;border-radius:12px;margin-bottom:10px;font-size:14px;color:white;outline:0}.field::placeholder{color:#72839f}.log{min-height:140px;max-height:220px;overflow:auto;font-size:13px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere}.footnote{font-size:12px;color:#7c8ba9;text-align:center;margin-top:19px}.bottom{display:none}.toast{position:fixed;z-index:100;bottom:25px;left:50%;transform:translate(-50%,30px);opacity:0;pointer-events:none;border:1px solid #736ab0;background:#28264e;color:#fff;padding:13px 19px;border-radius:13px;box-shadow:0 12px 40px #0008;transition:.2s;max-width:90vw;text-align:center;font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}.mini{font-size:12px;color:#899bb8}.pill{display:inline-block;padding:6px 10px;background:#2e2c55;color:#d0c7ff;border:1px solid #5b527f;border-radius:99px;font-size:11px;font-weight:800}.meter{text-align:center;font-size:15px;font-weight:800;color:#8cf1d5;margin-top:10px}.seats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin:12px auto;max-width:330px}.seat{border:1px solid #56567c;background:#40516c;color:white;border-radius:9px;padding:10px 2px;font-size:12px}.seat.chosen{background:#8270ec}.seat.taken{background:#352e46;color:#8c7b98;text-decoration:line-through}.coupon{border:2px dashed #8b7aff;background:linear-gradient(120deg,#342b5e,#1e3148);padding:22px;text-align:center;border-radius:15px;font-weight:900;font-size:24px;letter-spacing:1px}.footer{color:#71819f;font-size:12px;text-align:center;padding:23px 0}.footer b{color:#b6aaff}@media(max-width:820px){.app{padding:14px 14px 100px}.layout{display:flex;flex-direction:column;gap:14px}.sidebar{position:relative;top:auto;max-height:none;width:100%;padding:15px}.menu{display:flex;overflow:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:thin}.menu button{flex:0 0 118px;scroll-snap-align:start;min-height:73px}.workspace{width:100%;padding:18px;min-height:500px}.hero{padding:23px;min-height:155px;margin-bottom:14px}.hero-art{flex-basis:85px;height:95px}.hero-art .face{font-size:69px}.spark{font-size:17px}.hero h1{font-size:30px}.topbar{padding-bottom:14px}.workspace-top{margin-bottom:14px}.scene{height:175px}.bottom{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:20;justify-content:space-between;align-items:center;background:#121b30f0;backdrop-filter:blur(18px);border-top:1px solid #38425b;padding:11px max(18px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom))}.bottom button{background:#28334f;border:1px solid #41516c;border-radius:12px;color:white;padding:11px 15px;font-size:13px;font-weight:800}.bottom span{font-size:12px;color:#b0bdd6}.footer{padding-bottom:25px}}@media(max-width:390px){.hero-art{display:none}.workspace{padding:13px}.panel{padding:14px}.btns button{min-width:78px;padding:12px 8px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app"><header class="topbar"><div class="brand"><span class="brand-symbol">🤡</span><span>GAG LAB <span style="color:#8e80ff">.</span></span></div><span class="tag">100% 정상적인 오류</span></header>
+<div class="hero"><div><div class="eyebrow">THE MOST ANNOYING EXPERIENCE</div><h1>웃기려고 만든 건데<br><span>왜 화가 나죠?</span></h1><p>모든 버튼에는 이유가 있습니다. 물론 도움은 안 됩니다.<br>개그 24종 · 서버 없음 · 무제한 킹받음</p></div><div class="hero-art" aria-hidden="true"><span class="spark one">✨</span><div class="face">🤪</div><span class="spark two">💢</span></div></div>
+<div class="layout"><aside class="sidebar"><div class="smalltitle">EXPERIMENTS <span class="counter" id="count">24 GAGS</span></div><input class="search" id="search" placeholder="🔎 개그 검색" aria-label="개그 검색"><nav class="menu" id="menu" aria-label="개그 선택"></nav><p class="empty" id="empty" hidden>검색 결과마저 없습니다 🤷</p></aside>
+<main class="workspace"><div class="workspace-top"><span class="overline">● NOW PLAYING <span id="current-num">01 / 24</span></span><span class="hint">직접 눌러보세요 👆</span></div><div class="stage">
+
+  <section id="s-ac" class="sec">
+    <h2>❄️ 에어컨 / 히터</h2>
+<div class="scene" data-theme="hot" aria-hidden="true"><span class="scene-emoji">🥵</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="big">40°C</div>
+    <div class="msg" id="ac-m">아이 시원해</div>
+    <div class="btns"><button id="ac-c">❄️ 에어컨</button><button id="ac-h">🔥 히터</button><button class="p" id="ac-o">끄기</button></div>
+</div>
+  </section>
+
+  <section id="s-ld" class="sec">
+    <h2>⏳ 로딩중</h2>
+<div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">⌛</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="big" id="ld-p">0%</div>
+    <div class="bar"><div class="fill" id="ld-f"></div></div>
+    <div class="msg" id="ld-m">서버와 연결하는 중</div>
+    <div id="ld-box" style="position:relative;height:70px">
+      <button class="p" id="ld-ok" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border:0;border-radius:10px;padding:10px 20px;cursor:pointer">확인</button>
+    </div>
+</div>
+  </section>
+
+  <section id="s-lf" class="sec">
+    <h2>🛗 엘리베이터</h2>
+<div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">🛗</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="box" id="lf-fl">1</div>
+    <div class="msg" id="lf-m">문이 닫히는 중입니다...</div>
+    <div class="btns" id="lf-b">
+      <button class="p" id="lf-open">열림</button><button id="lf-close">닫힘</button>
+    </div>
+</div>
+  </section>
+
+  <section id="s-dl" class="sec">
+    <h2>🛵 배달 추적</h2>
+<div class="scene" data-theme="hot" aria-hidden="true"><span class="scene-emoji">🛵</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="big" id="dl-t">25분</div>
+    <div class="msg" id="dl-m">주문 접수 완료</div>
+    <div class="btns"><button id="dl-call">기사님께 전화</button><button id="dl-hurry">빨리 해주세요</button><button id="dl-cancel">주문 취소</button></div>
+</div>
+  </section>
+
+  <section id="s-su" class="sec">
+    <h2>📝 회원가입</h2>
+<div class="scene" data-theme="pink" aria-hidden="true"><span class="scene-emoji">🔐</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <input class="field" id="su-id" placeholder="아이디">
+    <input class="field" id="su-pw" type="password" placeholder="비밀번호">
+    <div class="msg" id="su-r">8자 이상, 대문자, 숫자, 특수문자 필요</div>
+    <div class="btns"><button class="p" id="su-go">가입하기</button></div>
+</div>
+  </section>
+
+  <section id="s-wt" class="sec">
+    <h2>☀️ 날씨</h2>
+<div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">🌦️</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div style="font-size:70px;text-align:center" id="wt-i">☀️</div>
+    <div class="big" id="wt-t">24°</div>
+    <div class="msg">맑음 · 강수 확률 0%</div>
+    <div class="msg" id="wt-m"></div>
+    <div class="btns"><button id="wt-r">새로고침</button><button class="p" id="wt-rain">비 오나요?</button><button id="wt-u">우산 필요?</button></div>
+</div>
+  </section>
+
+  <section id="s-cb" class="sec">
+    <h2>💬 고객센터 챗봇</h2>
+<div class="scene" data-theme="pink" aria-hidden="true"><span class="scene-emoji">🤖</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="log" id="cb-log"></div>
+    <div class="btns"><button id="cb-r">환불</button><button id="cb-c">상담사 연결</button></div>
+    <div style="display:flex;gap:6px;margin-top:8px"><input class="field" style="margin:0" id="cb-in" placeholder="질문 입력"><button class="p" id="cb-s" style="border:0;border-radius:8px;padding:0 14px;background:var(--accent);color:#fff">보내기</button></div>
+</div>
+  </section>
+
+  <section id="s-sv" class="sec">
+    <h2>📋 만족도 조사</h2>
+<div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">📋</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="msg" id="sv-s" style="text-align:left"></div>
+    <div style="font-size:15px;font-weight:bold;margin:8px 0" id="sv-q"></div>
+    <div class="btns" id="sv-o" style="flex-direction:column"></div>
+    <div class="btns"><button class="p" id="sv-n">다음</button></div>
+    <div class="msg" id="sv-m"></div>
+</div>
+  </section>
+
+  <section id="s-sb" class="sec">
+    <h2>🚇 지하철 도착</h2>
+<div class="scene" data-theme="hot" aria-hidden="true"><span class="scene-emoji">🚇</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="list"><div><span>잠실방면 (내선)</span><b id="sb-1">2분</b></div><div><span>대화방면 (외선)</span><b id="sb-2">3분</b></div></div>
+    <div class="msg">곧 도착합니다</div>
+    <div class="msg" id="sb-m"></div>
+    <div class="btns"><button class="p" id="sb-run">뛰어가기</button><button id="sb-wait">기다리기</button><button id="sb-seat">자리 확인</button></div>
+</div>
+  </section>
+
+  <section id="s-pk" class="sec">
+    <h2>🅿️ 주차 요금</h2>
+<div class="scene" data-theme="pink" aria-hidden="true"><span class="scene-emoji">🚘</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="box" id="pk-t">00:01:00</div>
+    <div class="big" id="pk-f" style="font-size:28px">0원</div>
+    <div class="msg" id="pk-m">처음 1분은 무료입니다</div>
+    <div class="btns"><button id="pk-out">출차하기</button><button class="p" id="pk-pay">결제하기</button></div>
+</div>
+  </section>
+
+  <section id="s-tx" class="sec">
+    <h2>🚕 택시 호출</h2>
+<div class="scene" data-theme="hot" aria-hidden="true"><span class="scene-emoji">🚕</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="msg" id="tx-b" style="font-size:15px;color:var(--text);font-weight:bold">기사님을 찾는 중입니다</div>
+    <div class="list"><div><span>예상 요금</span><b id="tx-f">12,000원</b></div><div><span>예상 도착</span><b id="tx-e">3분</b></div></div>
+    <div class="msg" id="tx-m">주변 기사님께 요청을 보내고 있습니다</div>
+    <div class="btns"><button id="tx-c">호출 취소</button><button class="p" id="tx-r">다시 호출</button></div>
+</div>
+  </section>
+
+  <section id="s-mt" class="sec">
+    <h2>🛠️ 서버 점검</h2>
+<div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">🛠️</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="box" id="mt-t">02:00:00</div>
+    <div class="bar"><div class="fill" id="mt-f"></div></div>
+    <div class="msg" id="mt-p">점검 진행률 0%</div>
+    <div class="btns"><button id="mt-r">새로고침</button><button class="p" id="mt-s">상태 확인</button></div>
+    <div class="msg" id="mt-m">점검은 연장될 수 있습니다</div>
+</div>
+  </section>
+
+  <section id="s-vm" class="sec">
+    <h2>🥤 음료 자판기</h2>
+<div class="scene" data-theme="pink" aria-hidden="true"><span class="scene-emoji">🥤</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="box" id="vm-s">투입 금액 0원</div>
+    <div class="msg" id="vm-m">돈을 넣어 주세요</div>
+    <div class="btns"><button id="vm-500">500원 넣기</button><button id="vm-1000">1,000원 넣기</button></div>
+    <div class="btns"><button id="vm-d1">콜라</button><button id="vm-d2">사이다</button><button id="vm-d3">커피</button></div>
+    <div class="btns"><button id="vm-ret">잔돈 반환</button></div>
+</div>
+  </section>
+
+  <section id="s-wf" class="sec">
+    <h2>📶 와이파이 연결</h2>
+<div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">📶</span><span class="scene-badge">GAG EXPERIMENT</span></div><div class="panel">
+    <div class="list" id="wf-list"></div>
+    <input class="field" id="wf-pw" type="password" placeholder="비밀번호 입력">
+    <div class="bar"><div class="fill" id="wf-f"></div></div>
+    <div class="msg" id="wf-p">연결 준비 중</div>
+    <div class="msg" id="wf-m">네트워크를 선택해 주세요</div>
+    <div class="btns"><button class="p" id="wf-go">연결</button><button id="wf-scan">다시 검색</button><button id="wf-rb">공유기 재부팅</button></div>
+</div>
+  </section>
+
+<section id="s-al" class="sec"><h2>⏰ 알람</h2><p class="intro">알람을 끄면 새로운 알람이 울립니다.</p><div class="scene" data-theme="hot" aria-hidden="true"><span class="scene-emoji">⏰</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><div class="big" id="al-clock">07:00</div><div class="msg" id="al-msg">일어날 시간입니다! 알람을 꺼보세요.</div><div class="btns"><button class="p" id="al-stop">알람 끄기</button><button id="al-snooze">5분 미루기</button></div></div></section>
+
+<section id="s-bt" class="sec"><h2>🔋 배터리</h2><p class="intro">충전할수록 더 불안해지는 배터리.</p><div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">🪫</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><div class="big" id="bt-p">100%</div><div class="bar"><div class="fill" id="bt-f" style="width:100%"></div></div><div class="msg" id="bt-msg">완충! 배터리 상태가 매우 좋습니다.</div><div class="btns"><button class="p" id="bt-charge">⚡ 충전하기</button><button id="bt-save">절전 모드</button></div></div></section>
+
+<section id="s-dn" class="sec"><h2>📥 다운로드</h2><p class="intro">거의 끝났습니다. 거의.</p><div class="scene" data-theme="pink" aria-hidden="true"><span class="scene-emoji">📦</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><div class="big" id="dn-p">0%</div><div class="bar"><div class="fill" id="dn-f"></div></div><div class="msg" id="dn-msg">파일: 엄청_중요한_파일.zip</div><div class="btns"><button class="p" id="dn-start">다운로드 시작</button><button id="dn-pause">일시 정지</button></div></div></section>
+
+<section id="s-cp" class="sec"><h2>🎟️ 할인쿠폰</h2><p class="intro">받기는 쉽고 사용은 불가능.</p><div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">🎟️</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><div class="coupon">50% OFF<small style="display:block;font-size:12px;font-weight:500;margin-top:9px">전 품목 할인 (일부 품목 제외)</small></div><div class="msg" id="cp-msg">오늘만! 쿠폰을 먼저 발급받으세요.</div><div class="btns"><button class="p" id="cp-get">쿠폰 받기</button><button id="cp-use">쿠폰 사용</button></div></div></section>
+
+<section id="s-st" class="sec"><h2>🎬 좌석 예매</h2><p class="intro">선택한 자리는 항상 다른 사람의 것.</p><div class="scene" data-theme="pink" aria-hidden="true"><span class="scene-emoji">🍿</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><div class="mini" style="text-align:center">SCREEN ━━━━━━━━━━━</div><div class="seats" id="st-seats"></div><div class="msg" id="st-msg">마음에 드는 좌석을 선택하세요.</div><div class="btns"><button class="p" id="st-pay">선택 좌석 결제</button><button id="st-reset">다시 보기</button></div></div></section>
+
+<section id="s-ki" class="sec"><h2>🍔 키오스크</h2><p class="intro">결제 직전에 바뀌는 장바구니.</p><div class="scene" data-theme="hot" aria-hidden="true"><span class="scene-emoji">🍔</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><div class="list"><div><span>🍔 햄버거 세트</span><b>8,900원</b></div><div><span>추가 옵션</span><b id="ki-opt">없음</b></div><div><span>결제 금액</span><b id="ki-total">8,900원</b></div></div><div class="msg" id="ki-msg">간편하게 주문해 보세요!</div><div class="btns"><button id="ki-minus">옵션 제거</button><button class="p" id="ki-pay">결제하기</button></div></div></section>
+
+<section id="s-sr" class="sec"><h2>🔎 검색엔진</h2><p class="intro">찾으려는 결과만 정확히 빼줍니다.</p><div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">🔮</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><input class="field" id="sr-in" placeholder="찾고 싶은 것을 입력하세요"><div class="msg" id="sr-msg">무엇이든 검색 가능합니다. 찾는 것은 별개입니다.</div><div class="list" id="sr-result"></div><div class="btns"><button class="p" id="sr-go">검색</button><button id="sr-lucky">운 좋은 검색</button></div></div></section>
+
+<section id="s-tr" class="sec"><h2>🌐 번역기</h2><p class="intro">뜻을 알수록 더 모르겠는 번역.</p><div class="scene" data-theme="pink" aria-hidden="true"><span class="scene-emoji">🗣️</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><input class="field" id="tr-in" placeholder="번역할 문장 입력"><div class="box" id="tr-out" style="font-size:18px">번역 결과가 여기에 나옵니다.</div><div class="msg" id="tr-msg">한국어 → 이상한 한국어</div><div class="btns"><button class="p" id="tr-go">번역하기</button><button id="tr-re">다시 번역</button></div></div></section>
+
+<section id="s-au" class="sec"><h2>📲 인증번호</h2><p class="intro">인증번호는 늘 한발 늦게 도착.</p><div class="scene" data-theme="mint" aria-hidden="true"><span class="scene-emoji">📲</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><div class="big" id="au-time">00:30</div><input class="field" id="au-input" inputmode="numeric" maxlength="6" placeholder="6자리 인증번호"><div class="msg" id="au-msg">인증번호를 요청해 주세요.</div><div class="btns"><button class="p" id="au-send">인증번호 전송</button><button id="au-check">확인</button></div></div></section>
+
+<section id="s-wk" class="sec"><h2>🏢 퇴근 승인</h2><p class="intro">퇴근하려면 퇴근 승인부터 받아야 합니다.</p><div class="scene" data-theme="hot" aria-hidden="true"><span class="scene-emoji">💼</span><span class="scene-badge">NEW · GAG EXPERIMENT</span></div><div class="panel"><div class="big" id="wk-time">18:00</div><div class="msg" id="wk-msg">근무 종료! 퇴근 승인을 신청하세요.</div><div class="list"><div><span>미처리 업무</span><b id="wk-tasks">0건</b></div><div><span>승인 상태</span><b id="wk-state">대기</b></div></div><div class="btns"><button class="p" id="wk-go">퇴근 신청</button><button id="wk-clear">업무 모두 완료</button></div></div></section>
+</div><p class="footnote">※ 실제 결제·가입·배달·위치·인증 서비스를 사용하지 않는 풍자 개그입니다.</p></main></div><footer class="footer">© GAG LAB · <b>24개의 고장난 경험</b> · Made to annoy, not to harm.</footer></div><div class="bottom"><button id="prev">← 이전</button><span id="mobile-num">01 / 24</span><button id="next">다음 →</button></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const $ = id => document.getElementById(id);
+const SECS = [
+  ['ac','❄️ 에어컨'],['ld','⏳ 로딩'],['lf','🛗 엘리베이터'],['dl','🛵 배달'],
+  ['su','📝 회원가입'],['wt','☀️ 날씨'],['cb','💬 챗봇'],['sv','📋 설문'],
+  ['sb','🚇 지하철'],['pk','🅿️ 주차'],['tx','🚕 택시'],['mt','🛠️ 점검'],
+  ['vm','🥤 자판기'],['wf','📶 와이파이'],
+  ['al','⏰ 알람'],
+  ['bt','🔋 배터리'],
+  ['dn','📥 다운로드'],
+  ['cp','🎟️ 할인쿠폰'],
+  ['st','🎬 좌석 예매'],
+  ['ki','🍔 키오스크'],
+  ['sr','🔎 검색엔진'],
+  ['tr','🌐 번역기'],
+  ['au','📲 인증번호'],
+  ['wk','🏢 퇴근 승인']
+];
+const menu = $('menu');
+SECS.forEach(([id,label]) => {
+  const b = document.createElement('button');
+  b.id = 'm-' + id; b.innerHTML = '<span class="tile-icon">'+label.split(' ')[0]+'</span><span>'+label.split(' ').slice(1).join(' ')+'</span>'; b.setAttribute('aria-label', label);
+  b.onclick = () => show(id);
+  menu.appendChild(b);
+});
+function show(id){
+  document.querySelectorAll('.sec').forEach(s => s.classList.toggle('on', s.id === 's-' + id));
+  SECS.forEach(([k]) => { $('m-' + k).classList.toggle('on', k === id); $('m-' + k).setAttribute('aria-current', k === id ? 'page' : 'false'); });
+  const i=SECS.findIndex(([k])=>k===id),num=String(i+1).padStart(2,'0')+' / '+SECS.length; $('current-num').textContent=num;$('mobile-num').textContent=num; window.activeGag=id; if(innerWidth<821) document.querySelector('.workspace').scrollIntoView({behavior:'smooth',block:'start'});
+}
+show('ac');
+
+function fmt(s){ return [Math.floor(s/3600), Math.floor(s%3600/60), s%60].map(v => String(v).padStart(2,'0')).join(':'); }
+
+// 1. 에어컨/히터
+let acM = 'cold';
+function acR(){ $('ac-m').textContent = acM === 'cold' ? '아이 시원해' : '아이 따뜻해'; }
+$('ac-c').onclick = () => { acM = 'cold'; acR(); };
+$('ac-h').onclick = () => { acM = 'hot'; acR(); };
+$('ac-o').onclick = () => { $('ac-m').textContent = '꺼졌습니다... 근데 여전히 40°C'; setTimeout(acR, 1500); };
+
+// 2. 로딩 (99%에서 멈춤, 확인 버튼은 도망감)
+let ldP = 0;
+setInterval(() => {
+  if (ldP < 99) { ldP += Math.random() < .5 ? 1 : 3; if (ldP > 99) ldP = 99; }
+  $('ld-p').textContent = ldP + '%';
+  $('ld-f').style.width = ldP + '%';
+  $('ld-m').textContent = ldP < 99 ? '로딩 중...' : '99%에서 멈춘 건 정상입니다';
+}, 300);
+function ldRun(){
+  const b = $('ld-box'), o = $('ld-ok');
+  o.style.left = (Math.random() * (b.clientWidth - 100) + 50) + 'px';
+  o.style.top = (Math.random() * (b.clientHeight - 40) + 20) + 'px';
+  o.style.transform = 'none';
+}
+$('ld-ok').onmouseenter = ldRun;
+$('ld-ok').onclick = () => { $('ld-m').textContent = '아직 99%예요. 확인은 완료가 아닙니다'; ldRun(); };
+
+// 3. 엘리베이터
+const lfB = $('lf-b');
+for (let n = 1; n <= 6; n++) {
+  const b = document.createElement('button');
+  b.textContent = n;
+  b.onclick = () => { $('lf-fl').textContent = n; $('lf-m').textContent = '층 표시만 바뀌었습니다 (실제로는 이동 안 함)'; };
+  lfB.insertBefore(b, $('lf-open'));
+}
+$('lf-open').onclick = () => { $('lf-m').textContent = '문이 열렸다가 바로 닫힙니다'; };
+$('lf-close').onclick = () => { $('lf-m').textContent = '닫힘 버튼은 장식입니다. 문이 다시 열립니다'; };
+
+// 4. 배달
+let dlT = 25;
+setInterval(() => { if (Math.random() < .3) dlT++; $('dl-t').textContent = dlT + '분'; }, 2000);
+$('dl-call').onclick = () => { $('dl-m').textContent = '전화 연결 중... 기사님이 받지 않습니다'; };
+$('dl-hurry').onclick = () => { dlT += 5; $('dl-t').textContent = dlT + '분'; $('dl-m').textContent = '재촉하면 예상 시간이 5분 늘어납니다'; };
+$('dl-cancel').onclick = () => { $('dl-m').textContent = '이미 조리 중이라 취소할 수 없습니다'; };
+
+// 5. 회원가입
+$('su-pw').addEventListener('input', () => {
+  const v = $('su-pw').value;
+  const n = [v.length >= 8, /[A-Z]/.test(v), /[0-9]/.test(v), /[^A-Za-z0-9]/.test(v)].filter(Boolean).length;
+  $('su-r').textContent = n === 4 ? "규칙 통과! 그런데 '생일'이 들어가면 안 됩니다" : '규칙 ' + n + '/4 통과';
+});
+let suFail = 0;
+$('su-go').onclick = () => {
+  if (!$('su-id').value.trim()) { $('su-r').textContent = '아이디를 입력해 주세요 (이미 사용중일 수 있습니다)'; return; }
+  suFail++;
+  $('su-r').textContent = '가입 실패 ' + suFail + '회: 캡차의 정답이 아닙니다. 자동차는 몇 개였을까요?';
+};
+
+// 6. 날씨
+let wtOn = true;
+setInterval(() => {
+  wtOn = !wtOn;
+  $('wt-i').textContent = wtOn ? '☀️' : '🌧️';
+  if (!wtOn) $('wt-m').textContent = '잠깐 비가 왔지만 강수 확률은 여전히 0%입니다';
+}, 3000);
+$('wt-r').onclick = () => { $('wt-t').textContent = (22 + Math.floor(Math.random() * 5)) + '°'; $('wt-m').textContent = '업데이트 완료. 날씨는 여전히 맑음입니다'; };
+$('wt-rain').onclick = () => { $('wt-m').textContent = '비가 오는지는 창밖을 확인해 주세요. 저희는 모릅니다'; };
+$('wt-u').onclick = () => { $('wt-m').textContent = '우산 필요 없음 (강수 확률 0%)'; };
+
+// 7. 챗봇
+let cbN = 0;
+function cbAdd(t){ const d = document.createElement('div'); d.textContent = t; $('cb-log').appendChild(d); $('cb-log').scrollTop = 1e9; }
+function cbReply(q){
+  cbN++;
+  if (q.includes('상담사')) return '상담사 대기 인원은 ' + (100 + cbN * 7) + '명입니다.';
+  if (q.includes('환불')) return '환불은 영업일 3~5일입니다. 단, 이번 주는 예외입니다.';
+  return '문의하신 내용을 확인 중입니다. 자주 묻는 질문을 먼저 확인해 주세요.';
+}
+function cbSend(q){
+  if (!q.trim()) return;
+  cbAdd('나: ' + q);
+  setTimeout(() => cbAdd('봇: ' + cbReply(q)), 500);
+  $('cb-in').value = '';
+}
+$('cb-s').onclick = () => cbSend($('cb-in').value);
+$('cb-in').addEventListener('keydown', e => { if (e.key === 'Enter') cbSend($('cb-in').value); });
+$('cb-r').onclick = () => cbSend('환불');
+$('cb-c').onclick = () => cbSend('상담사');
+
+// 8. 설문
+const qs = ['1. 설문에 얼마나 만족하셨나요?','2. 안내 문구를 읽으셨나요?','3. 다른 사람에게 추천하시겠습니까?','4. 설문을 그만두고 싶은 적이 있었나요?','5. 제출하시겠습니까?'];
+const ops = ['예','아니요','잘 모르겠음'];
+let svI = 0, svAns = null, svSub = 0;
+function svR(){
+  $('sv-s').textContent = '문항 ' + (svI + 1) + ' / 5';
+  $('sv-q').textContent = qs[svI];
+  const box = $('sv-o'); box.innerHTML = '';
+  ops.forEach((o, i) => {
+    const b = document.createElement('button');
+    b.textContent = o;
+    if (svAns === i) b.classList.add('p');
+    b.onclick = () => { svAns = i; svR(); };
+    box.appendChild(b);
+  });
+}
+$('sv-n').onclick = () => {
+  if (svAns === null) { $('sv-m').textContent = '답변을 선택해 주셔야 다음으로 넘어갈 수 있습니다'; return; }
+  $('sv-m').textContent = '';
+  svAns = null;
+  if (svI < qs.length - 1) { svI++; }
+  else { svSub++; svI = 0; $('sv-m').textContent = '제출 완료! 1번 문항으로 돌아갑니다 (제출 ' + svSub + '회)'; }
+  svR();
+};
+svR();
+
+// 9. 지하철
+let s1 = 2, s2 = 3;
+setInterval(() => {
+  if (Math.random() < .6) s1++;
+  if (Math.random() < .3) s2++;
+  $('sb-1').textContent = s1 + '분'; $('sb-2').textContent = s2 + '분';
+}, 2500);
+$('sb-run').onclick = () => { $('sb-m').textContent = '뛰는 중... 열차가 이미 떠났습니다'; };
+$('sb-wait').onclick = () => { s1 += 2; $('sb-1').textContent = s1 + '분'; $('sb-m').textContent = '기다리는 동안 도착 시간이 2분 늘었습니다'; };
+$('sb-seat').onclick = () => { $('sb-m').textContent = '자리가 있을 확률: 0%. 서서 가는 것을 권장합니다'; };
+
+// 10. 주차
+const pkStart = Date.now();
+setInterval(() => {
+  const s = Math.floor((Date.now() - pkStart) / 1000) + 60;
+  const fee = s <= 60 ? 0 : (s - 60) * 500;
+  $('pk-t').textContent = fmt(s);
+  $('pk-f').textContent = fee.toLocaleString('ko-KR') + '원';
+  $('pk-m').textContent = s > 60 ? '요금은 1초마다 500원씩 오릅니다' : '처음 1분은 무료입니다';
+}, 1000);
+$('pk-out').onclick = () => { $('pk-m').textContent = '결제가 먼저 필요합니다'; };
+$('pk-pay').onclick = () => { $('pk-m').textContent = '결제 금액이 계속 바뀌어서 완료할 수 없습니다'; };
+
+// 11. 택시
+let txF = 12000, txE = 3;
+setInterval(() => {
+  txE++; txF += 500;
+  $('tx-e').textContent = txE + '분';
+  $('tx-f').textContent = txF.toLocaleString('ko-KR') + '원';
+}, 2500);
+$('tx-c').onclick = () => { $('tx-m').textContent = '취소 수수료 3,000원이 발생합니다. 기사님은 이미 출발했습니다'; };
+$('tx-r').onclick = () => { $('tx-m').textContent = '대기열 1번째입니다 (같은 기사님)'; };
+
+// 12. 서버 점검
+let mtT = 7200, mtP = 0;
+setInterval(() => {
+  mtT += 60;
+  if (mtP < 99 && Math.random() < .5) mtP++;
+  $('mt-t').textContent = fmt(mtT);
+  $('mt-f').style.width = mtP + '%';
+  $('mt-p').textContent = mtP < 99 ? '점검 진행률 ' + mtP + '%' : '점검 진행률 99% (거의 다 됐습니다)';
+}, 1500);
+$('mt-r').onclick = () => { mtT += 1800; $('mt-t').textContent = fmt(mtT); $('mt-m').textContent = '점검 시간이 30분 연장되었습니다'; };
+$('mt-s').onclick = () => { $('mt-m').textContent = '현재 상태: 점검 준비 중'; };
+
+// 13. 자판기
+let vmCredit = 0;
+const vmFmt = n => n.toLocaleString('ko-KR') + '원';
+function vmUpd(){ $('vm-s').textContent = '투입 금액 ' + vmFmt(vmCredit); }
+$('vm-500').onclick = () => { vmCredit += 500; vmUpd(); $('vm-m').textContent = '투입 완료'; };
+$('vm-1000').onclick = () => { vmCredit += 1000; vmUpd(); $('vm-m').textContent = '투입 완료'; };
+['콜라','사이다','커피'].forEach((name, i) => {
+  $('vm-d' + (i + 1)).onclick = () => {
+    if (vmCredit < 500) { $('vm-m').textContent = name + ' 가격은 500원입니다. 금액이 부족합니다'; return; }
+    $('vm-m').textContent = name + ' 나오는 중... 잠시만 기다려 주세요';
+    setTimeout(() => { $('vm-m').textContent = '음료가 나오지 않았습니다. 투입 금액은 그대로입니다'; }, 1500);
+  };
+});
+$('vm-ret').onclick = () => { $('vm-m').textContent = '반환구가 막혀 있습니다. 관리자 호출 중... (응답 없음)'; };
+vmUpd();
+
+// 14. 와이파이
+const wfNets = [['집_와이파이_5G','강함'],['옆집_2.4G','약함'],['카페_FREE','보통'],['빌라 와이파이','신호 없음']];
+let wfTries = 0, wfP = 0, wfTimer = null;
+function wfList(){
+  $('wf-list').innerHTML = '';
+  wfNets.forEach(([n, s]) => {
+    const d = document.createElement('div');
+    d.innerHTML = '<span>' + n + '</span><span style="color:#888">' + s + '</span>';
+    $('wf-list').appendChild(d);
+  });
+}
+function wfTo99(){
+  clearInterval(wfTimer);
+  wfTimer = setInterval(() => {
+    if (wfP < 99) wfP += Math.random() < .5 ? 1 : 2;
+    if (wfP > 99) wfP = 99;
+    $('wf-f').style.width = wfP + '%';
+    $('wf-p').textContent = '연결 중 ' + wfP + '%';
+  }, 300);
+}
+$('wf-go').onclick = () => {
+  if (!$('wf-pw').value) { $('wf-m').textContent = '비밀번호를 입력해 주세요'; return; }
+  wfTries++; wfP = 0; wfTo99();
+  setTimeout(() => { $('wf-m').textContent = '연결 실패 ' + wfTries + '회: 비밀번호가 틀렸습니다 (맞는 것 같아도 틀렸습니다)'; }, 2500);
+};
+$('wf-scan').onclick = () => {
+  wfNets.push(['와이파이_' + (wfNets.length + 1), '매우 약함']);
+  wfList();
+  $('wf-m').textContent = '검색 완료. 네트워크가 ' + wfNets.length + '개 발견되었습니다 (모두 연결 불가)';
+};
+$('wf-rb').onclick = () => { $('wf-m').textContent = '공유기 재부팅 중... 예상 시간 2분 (기다리는 동안 늘어날 수 있습니다)'; wfP = 0; wfTo99(); };
+wfList();
+wfTo99();
+
+// 개그 15~24: 모든 상호작용은 로컬 시뮬레이션입니다.
+let alN=0; $('al-stop').onclick=()=>{alN++;$('al-clock').textContent='07:'+String(alN%60).padStart(2,'0');$('al-msg').textContent='알람이 꺼졌습니다. 다음 알람이 '+(alN<5?'방금':'이미')+' 시작되었습니다 🔔';};$('al-snooze').onclick=()=>{alN++;$('al-clock').textContent='07:'+String((alN*5)%60).padStart(2,'0');$('al-msg').textContent='5분 미루기 성공! 5초 뒤에 다시 울릴 예정입니다.';setTimeout(()=>{$('al-msg').textContent='🔔 삐삐삐! 5분은 마음속 시간입니다.'},5000)};
+let bt=100;function btUpdate(t){$('bt-p').textContent=bt+'%';$('bt-f').style.width=bt+'%';$('bt-msg').textContent=t;}$('bt-charge').onclick=()=>{bt=Math.max(1,bt-13);btUpdate('충전기를 꽂았더니 배터리가 '+bt+'%가 되었습니다. 역충전 신기술!');};$('bt-save').onclick=()=>{bt=Math.max(1,bt-7);btUpdate('절전모드 작동! 절약을 위해 7% 사용했습니다.');};
+let dnP=0,dnTimer=null;function dnDraw(t){$('dn-p').textContent=dnP+'%';$('dn-f').style.width=dnP+'%';$('dn-msg').textContent=t;}$('dn-start').onclick=()=>{clearInterval(dnTimer);dnP=0;dnDraw('다운로드가 시작되었습니다.');dnTimer=setInterval(()=>{dnP=Math.min(99,dnP+Math.ceil(Math.random()*8));dnDraw(dnP===99?'99% · 마지막 1%는 별도 DLC입니다.':'다운로드 중... 조금만 더 기다려 주세요.');if(dnP===99)clearInterval(dnTimer)},450)};$('dn-pause').onclick=()=>{clearInterval(dnTimer);dnP=Math.max(0,dnP-30);dnDraw('일시 정지: 보존하려던 진행률 30%가 증발했습니다.')};
+let cpIssued=false,cpTries=0;$('cp-get').onclick=()=>{cpIssued=true;$('cp-msg').textContent='쿠폰이 발급되었습니다! 유효기간: 바로 직전까지 🎉';};$('cp-use').onclick=()=>{cpTries++;$('cp-msg').textContent=cpIssued?'쿠폰 사용 실패 '+cpTries+'회 · 발급 직후 만료되었습니다.':'쿠폰을 먼저 발급받아야 합니다.'};
+let selectedSeat=null;function seatRender(){const root=$('st-seats');root.innerHTML='';for(let i=1;i<=24;i++){let b=document.createElement('button');b.className='seat'+(i%5===0?' taken':'')+(selectedSeat===i?' chosen':'');b.textContent=String.fromCharCode(65+Math.floor((i-1)/6))+(i-1)%6+1;b.onclick=()=>{selectedSeat=i;$('st-msg').textContent=b.textContent+'석 선택 완료! 결제 전에 다른 사람이 고를지도 몰라요.';seatRender()};root.appendChild(b)}}seatRender();$('st-pay').onclick=()=>{$('st-msg').textContent=selectedSeat?'안타깝게도 그 좌석은 방금 다른 고객이 예매했습니다.':'좌석을 먼저 선택해 주세요.';selectedSeat=null;seatRender()};$('st-reset').onclick=()=>{selectedSeat=null;seatRender();$('st-msg').textContent='다시 선택할 수 있습니다. 결과는 장담 못 합니다.'};
+let kiExtra=0;$('ki-pay').onclick=()=>{kiExtra+=1500;$('ki-opt').textContent='직원 미소 옵션 '+kiExtra.toLocaleString()+'원';$('ki-total').textContent=(8900+kiExtra).toLocaleString()+'원';$('ki-msg').textContent='결제 직전 필수 선택 옵션이 추가되었습니다. 취소는 불가능합니다.'};$('ki-minus').onclick=()=>{$('ki-msg').textContent='옵션 제거 기능을 이용하려면 프리미엄 멤버십이 필요합니다.'};
+let srN=0;function doSearch(lucky){srN++;const q=$('sr-in').value.trim()||'아무것도';$('sr-msg').textContent='"'+q+'"에 대한 검색 결과: '+(srN*1288).toLocaleString()+'건 (관련 결과 0건)';$('sr-result').innerHTML='';['[광고] 검색 대신 오늘의 운세 보기','혹시 "'+q.split('').reverse().join('')+'"을(를) 찾으셨나요?','원하시는 결과는 다음 페이지에 있습니다.'].forEach(t=>{let d=document.createElement('div');d.textContent=t;$('sr-result').appendChild(d)});if(lucky)$('sr-msg').textContent='운 좋은 검색에 실패했습니다. 운을 충전해 주세요.'}$('sr-go').onclick=()=>doSearch(false);$('sr-lucky').onclick=()=>doSearch(true);$('sr-in').addEventListener('keydown',e=>{if(e.key==='Enter')doSearch(false)});
+let trN=0;function translate(){trN++;let s=$('tr-in').value.trim();$('tr-out').textContent=s?(trN%3===1?'대충 그런 뜻입니다.':trN%3===2?'문맥상 어쩌라는 의미입니다.':'번역할 수 없는 깊은 감동이 전달되었습니다.'):'입력된 공기까지 번역했습니다.';$('tr-msg').textContent='번역 정확도: '+Math.max(0,100-trN*17)+'% · 원문과의 일치 여부는 비밀';}$('tr-go').onclick=translate;$('tr-re').onclick=translate;
+let auCode='',auSecs=30,auInt=null,auN=0;$('au-send').onclick=()=>{auN++;auCode=String(100000+Math.floor(Math.random()*900000));auSecs=10;clearInterval(auInt);$('au-msg').textContent='전송 완료! 인증번호는 12초 후 화면에 표시됩니다.';$('au-time').textContent='00:10';auInt=setInterval(()=>{auSecs=Math.max(0,auSecs-1);$('au-time').textContent='00:'+String(auSecs).padStart(2,'0');if(auSecs===0){clearInterval(auInt);$('au-msg').textContent='인증번호 '+auCode+'가 도착했습니다! 유효기간이 만료되었습니다.'}},1000)};$('au-check').onclick=()=>{$('au-msg').textContent=auSecs===0?'인증시간 초과! 다시 요청해 주세요.':'인증번호가 아직 도착하지 않았습니다. 조금만 참으세요.'};
+let wkN=0,wkTasks=0;$('wk-go').onclick=()=>{wkN++;wkTasks+=2;$('wk-tasks').textContent=wkTasks+'건';$('wk-state').textContent='반려 '+wkN+'회';$('wk-time').textContent='18:'+String(Math.min(59,wkN*7)).padStart(2,'0');$('wk-msg').textContent='퇴근 신청이 반려되었습니다. 신청서 보완 업무 2건이 추가되었습니다.'};$('wk-clear').onclick=()=>{wkTasks=0;$('wk-tasks').textContent='0건';$('wk-msg').textContent='업무 완료! 퇴근하려면 다시 신청해 주세요.'};
+// 네비게이션과 검색
+$('prev').onclick=()=>{const i=SECS.findIndex(([k])=>k===window.activeGag);show(SECS[(i-1+SECS.length)%SECS.length][0])};$('next').onclick=()=>{const i=SECS.findIndex(([k])=>k===window.activeGag);show(SECS[(i+1)%SECS.length][0])};$('search').addEventListener('input',e=>{let n=0;SECS.forEach(([id,label])=>{let visible=label.toLowerCase().includes(e.target.value.toLowerCase());$('m-'+id).hidden=!visible;if(visible)n++});$('count').textContent=n+' / '+SECS.length;$('empty').hidden=n!==0});
+// 실제로 입력된 비밀번호/검색어는 외부에 전송되지 않습니다.
+
+</script>
+</body>
+</html>
